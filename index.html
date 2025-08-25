@@ -17,8 +17,19 @@
     .hero {
       height: 100vh;
       background-image: url("LV.jpg");
-      background-size: cover;
+      background-size: cover;      
       background-position: center;
+      background-repeat: no-repeat;
+    }
+
+   
+    @media (max-width: 768px) {
+      .hero {
+        height: 60vh;              
+        background-size: contain;  
+        background-position: center top;
+        background-color: #000;    
+      }
     }
 
     .section {
@@ -44,7 +55,7 @@
 </head>
 <body>
 
-  <div class="hero"></div> <!-- Full-screen image with no text -->
+  <div class="hero"></div> 
 
   <div class="section" id="intro">
     <h2>Introduction</h2>
@@ -77,6 +88,3 @@
 
 </body>
 </html>
-
-
-
