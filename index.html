@@ -15,21 +15,14 @@
     }
 
     .hero {
-      height: 100vh;
-      background-image: url("LV.jpg");
-      background-size: cover;      
-      background-position: center;
-      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
     }
 
-   
-    @media (max-width: 768px) {
-      .hero {
-        height: 60vh;              
-        background-size: contain;  
-        background-position: center top;
-        background-color: #000;    
-      }
+    .hero img {
+      width: 100%;       
+      height: auto;       
+      display: block;     
     }
 
     .section {
@@ -55,7 +48,9 @@
 </head>
 <body>
 
-  <div class="hero"></div> 
+  <div class="hero">
+    <img src="LV.jpg" alt="Louis Vuitton">
+  </div>
 
   <div class="section" id="intro">
     <h2>Introduction</h2>
